@@ -1,0 +1,3 @@
+This is a sample configuration file.
+You can store any text data here.
+The LittleFS will preserve this data even after power cycles.
