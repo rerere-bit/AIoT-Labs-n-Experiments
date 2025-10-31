@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>ESP32 Seven Segment Control</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>Kontrol Seven Segment</h2>
+  <div id="buttons">
+    <script>
+      for (let i = 0; i <= 9; i++) {
+        document.write(`<button onclick="sendNumber(${i})">${i}</button>`);
+      }
+      function sendNumber(num) {
+        fetch(`/number?value=${num}`);
+      }
+    </script>
+  </div>
+</body>
+</html>
